@@ -109,17 +109,15 @@ $ npm login --scope=@NAMESPACE --auth-type=legacy --registry=https://HOSTNAME/_r
 
 ## Publishing a package
 
-> [!NOTE]
 {% ifversion packages-npm-v2 %}
-
+> [!NOTE]
 > * Package names and scopes must only use lowercase letters.
 > * The tarball for an npm version must be smaller than 256MB in size.
-
 {% else %}
-
+> [!NOTE]
 > Package names and scopes must only use lowercase letters.
-
 {% endif %}
+
 
 {% ifversion packages-npm-v2 %}
 The {% data variables.product.prodname_registry %} registry stores npm packages within your organization or personal account, and allows you to associate a package with a repository. You can choose whether to inherit permissions from a repository, or set granular permissions independently of a repository.
